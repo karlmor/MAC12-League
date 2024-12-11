@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark gray text */
+}
+
+header {
+    background-color: #007bff; /* Bright blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #0056b3; /* Darker blue */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #003f7f; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Component Styles */
+.franchises-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three boxes per row */
+    gap: 20px; /* Space between the boxes */
+    justify-content: center; /* Center the grid */
+    margin: 20px 0;
+}
+
+.franchise-box {
+    width: 500px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    background: #ffffff; /* White background */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align content */
+    padding: 15px; /* Inner spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Flexbox for aligning content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distribute content evenly */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden; /* Ensure nothing overflows */
+}
+
+.franchise-box img {
+    max-width: 100%; /* Image adapts to the box width */
+    max-height: 60%; /* Prevent the image from exceeding 60% of the box height */
+    object-fit: contain; /* Ensure the image scales proportionally */
+    border-radius: 8px; /* Optional: rounded image corners */
+}
+
+.franchise-box h3 {
+    margin: 10px 0 5px; /* Space around the team name */
+    font-size: 1.2em;
+    color: #007bff; /* Bright blue */
+}
+
+.franchise-box p {
+    margin: 0; /* No extra margin */
+    font-size: 0.9em;
+    color: #555; /* Gray for the GM name */
+}
