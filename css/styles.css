@@ -218,3 +218,76 @@ footer {
     color: #666;
 }
 
+/* Custom Section Header */
+.section-header {
+    font-size: 2em;
+    color: white;
+    background-color: #007bff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.section-header::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 100%;
+    background-color: #003f7f; /* Darker blue */
+    clip-path: polygon(100% 0, 0 50%, 100% 100%); /* Creates a triangular shape */
+}
+
+.section-header::after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 100%;
+    background-color: #003f7f; /* Darker blue */
+    clip-path: polygon(0 0, 100% 50%, 0 100%); /* Creates a triangular shape */
+}
+
+/* Custom Year Banner */
+.year-banner {
+    font-size: 1.2em;
+    color: white;
+    background-color: #007bff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.year-banner::before, .year-banner::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.year-banner::before {
+    left: -10px;
+}
+
+.year-banner::after {
+    right: -10px;
+    transform: translateY(-50%) rotate(180deg);
+}
