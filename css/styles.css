@@ -94,3 +94,67 @@ footer {
     font-size: 0.9em;
     color: #555; /* Gray for the GM name */
 }
+
+.ring-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ring-card {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ring-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ring-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.ring-card p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Awards Page Styles */
+.awards-section, .records-section {
+    margin-top: 20px;
+}
+
+.awards-section ul {
+    list-style: disc inside;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.records-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.records-section th, .records-section td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.records-section th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
