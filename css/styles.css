@@ -226,8 +226,11 @@ footer {
 }
 
 .draft-banner svg {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Makes it responsive */
+    max-width: 600px; /* Restrict the maximum size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the banner */
+    display: block;
 }
 
 /* Custom Year Banner */
