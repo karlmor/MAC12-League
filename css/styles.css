@@ -218,42 +218,41 @@ footer {
     color: #666;
 }
 
-/* Custom Section Header */
+/* Polished Section Header */
 .section-header {
-    font-size: 2em;
+    font-size: 1.8em;
     color: white;
     background-color: #007bff;
     text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 10px 20px;
+    margin: 20px auto;
     position: relative;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.section-header::before {
-    content: '';
-    position: absolute;
-    left: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 100%;
-    background-color: #003f7f; /* Darker blue */
-    clip-path: polygon(100% 0, 0 50%, 100% 100%); /* Creates a triangular shape */
-}
-
+.section-header::before,
 .section-header::after {
     content: '';
     position: absolute;
-    right: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
+    top: 0;
     height: 100%;
-    background-color: #003f7f; /* Darker blue */
-    clip-path: polygon(0 0, 100% 50%, 0 100%); /* Creates a triangular shape */
+    width: 25px;
+    background-color: #003f7f; /* Darker blue for the arrow ends */
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
+
+.section-header::before {
+    left: -25px;
+}
+
+.section-header::after {
+    right: -25px;
+    transform: rotate(180deg);
+}
+
 
 /* Custom Year Banner */
 .year-banner {
