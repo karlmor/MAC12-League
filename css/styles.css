@@ -218,41 +218,17 @@ footer {
     color: #666;
 }
 
-/* Polished Section Header */
-.section-header {
-    font-size: 1.8em;
-    color: white;
-    background-color: #007bff;
+/* trying svg style */
+.draft-banner {
     text-align: center;
-    padding: 10px 20px;
-    margin: 20px auto;
-    position: relative;
-    display: inline-block;
-    border-radius: 25px;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    background-color: #f4f4f4; /* Light gray background */
 }
 
-.section-header::before,
-.section-header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 25px;
-    background-color: #003f7f; /* Darker blue for the arrow ends */
-    clip-path: polygon(0 0, 100% 50%, 0 100%);
+.draft-banner svg {
+    max-width: 100%;
+    height: auto;
 }
-
-.section-header::before {
-    left: -25px;
-}
-
-.section-header::after {
-    right: -25px;
-    transform: rotate(180deg);
-}
-
 
 /* Custom Year Banner */
 .year-banner {
