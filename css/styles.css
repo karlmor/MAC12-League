@@ -91,6 +91,52 @@ section {
     font-weight: bold;
 }
 
+
+/* Champion Banners */
+.champion-highlights {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .banners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .banner {
+    background: linear-gradient(to bottom, #000, #222);
+    border: 3px solid #00bfff; /* Hint of blue */
+    color: #fff;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+  }
+  
+  .year {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .winner {
+    font-size: 1em;
+    font-style: italic;
+  }
+  
+  .icon {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+
 /* ======================================
    4. Table Styling
 ====================================== */
