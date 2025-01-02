@@ -33,9 +33,6 @@ header {
     background-color: #2c3e50; /* Darker blue */
     color: white;
     padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .logo-container {
@@ -45,7 +42,7 @@ header {
 
 /* The actual logo image sizing */
 .logo {
-    height: 100;
+    height: 100px;
     width: auto;  /* maintains aspect ratio */
 }
 
@@ -187,8 +184,11 @@ tr:hover {
 ====================================== */
 .franchises-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px; /* Optional: add a max-width to center content */
+    margin: 0 auto;
+    padding: 20px; /* optional for breathing room */
 }
 
 .franchise-box, .ring-card, .draft-card {
@@ -201,9 +201,12 @@ tr:hover {
 }
 
 .franchise-box img, .ring-card img, .draft-card img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* or 'contain' */
+    border-radius: 8px; /* optional, to round corners */
+    display: block;     /* helps remove any extra spacing under images */
+    margin: 0 auto;
 }
 
 .franchise-box h3,
