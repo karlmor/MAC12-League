@@ -4,7 +4,7 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
-    padding: 10px;
+    padding: 0;
     background-color: #e6f0f8; /* Light blue background */
     color: #333; /* Dark text */
 }
@@ -38,21 +38,26 @@ header {
     justify-content: center;
 }
 
-.header-logo {
-    margin-right: auto; /* This pushes the logo link to the far left */
-  }
+.logo-container {
+    text-align: left;    /* Pin logo to the left */
+    padding-left: 20px;  /* Provide space from the left edge if you like */
+}
 
-header img {
-    height: 70px;
+/* The actual logo image sizing */
+.logo {
+    height: 60px;
+    width: auto;  /* maintains aspect ratio */
+}
+
+/* The heading + tagline row is below the logo row, so center them */
+.header-text {
+    text-align: center;  /* Both H1 and P get centered horizontally */
+    margin: 0 auto;
 }
   
 header h1 {
     font-size: 2.5rem;
     margin: 10px 0;
-}
-
-.header-text {
-    text-align: center;
 }
 
 nav {
