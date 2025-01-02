@@ -45,7 +45,7 @@ header {
 
 /* The actual logo image sizing */
 .logo {
-    height: 60px;
+    height: 100;
     width: auto;  /* maintains aspect ratio */
 }
 
