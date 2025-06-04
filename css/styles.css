@@ -152,6 +152,216 @@ nav a.active::after {
     nav a::after {
         display: none;
     }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        padding-left: 1rem;
+        width: 100%;
+        background: #f8fafc;
+    }
+
+    .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .nav-links a, 
+    .dropdown-menu a {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border-radius: 4px;
+    }
+
+    .nav-links a:hover,
+    .dropdown-menu a:hover {
+        background: #f1f5f9;
+    }
+
+    /* Page title adjustments */
+    .page-title {
+        padding: 2rem 1rem;
+    }
+
+    .page-title h1 {
+        font-size: 2rem;
+    }
+
+    /* Section adjustments */
+    section {
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    /* Performance table adjustments */
+    .performance-section {
+        padding: 15px;
+        margin: 20px 10px;
+    }
+
+    .performance-table {
+        font-size: 0.9rem;
+    }
+
+    .performance-table th,
+    .performance-table td {
+        padding: 8px;
+    }
+
+    /* Draft history adjustments */
+    .draft-picks-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .draft-pick-card {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .pick-stats {
+        min-width: auto;
+        width: 100%;
+    }
+
+    /* Rivalries adjustments */
+    .rivalry-matchup {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .rivalry-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .team-stats {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: none;
+    }
+
+    /* Newsletter adjustments */
+    .newsletter-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .newsletter-card {
+        margin: 0.5rem 0;
+    }
+
+    /* Champion showcase adjustments */
+    .champion-showcase {
+        padding: 15px;
+        margin: 20px 10px;
+    }
+
+    .champion-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .team-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .franchise-name {
+        font-size: 1.8rem;
+    }
+
+    /* Franchise boxes adjustments */
+    .franchise-box {
+        margin: 10px;
+    }
+
+    .franchise-box img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .championship-ring {
+        width: 60px;
+        height: 60px;
+        top: -15px;
+        right: -15px;
+    }
+
+    /* Medalists section adjustments */
+    .medalist-card {
+        margin: 10px 0;
+    }
+
+    .player-photo {
+        height: 250px;
+    }
+
+    .player-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+    /* Playoff bracket adjustments */
+    .playoff-bracket {
+        padding: 1rem;
+        overflow-x: auto;
+    }
+
+    .bracket-container {
+        min-width: 800px;
+    }
+
+    .bracket-game {
+        margin: 0.5rem 0;
+    }
+
+    /* Standings section adjustments */
+    .standings-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 10px;
+    }
+
+    .standings-table,
+    .post-season-table {
+        font-size: 0.9rem;
+    }
+
+    .team-cell img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Additional tablet breakpoint */
+@media (min-width: 769px) and (max-width: 1024px) {
+    section {
+        width: 90%;
+    }
+
+    .franchise-box img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .draft-picks-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .standings-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Page title section */
