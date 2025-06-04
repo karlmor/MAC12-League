@@ -5,175 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAC12 NFL Fantasy League</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-    <body>
-        <header>
-        <!-- 1) Logo Row -->
-        <div class="logo-container">
-            <a href="index.html">
-            <img src="images/MAC12 Logo.png" alt="League Logo" class="logo">
-            </a>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/MAC12 Logo.png" alt="League Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="franchises.html">Franchises</a>
+                    <a href="newsletters.html">Newsletters</a>
+                    <div class="nav-item">
+                        <a href="#" class="dropdown-toggle">Seasons</a>
+                        <div class="dropdown-menu">
+                            <a href="seasons/2024.html">2024 Season</a>
+                            <a href="seasons/2023.html">2023 Season</a>
+                        </div>
+                    </div>
+                    <a href="rivalries.html">Rivalries</a>
+                    <a href="draft-history.html">Draft History</a>
+                </div>
+            </nav>
         </div>
-        
-        <!-- 2) Heading + Tagline Row -->
-        <div class="header-text">
-            <h1>MAC12 Fantasy NFL</h1>
-            <p>Ohhhhhh yeeeeeee, get up and smell that football!</p>
-        </div>
-        </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="franchises.html">Franchises</a>
-        <a href="newsletters.html">Newsletters</a>
-        <a href="awards.html">Awards & Records</a>
-        <a href="rings.html">Championship Rings</a>
-        <a href="draft-history.html">Draft History</a>
-    </nav>
-    <section class="champion-highlights">
-        <h2>League Champions</h2>
-        <div class="banners">
-          <div class="banner">
-            <div class="year">2024</div>
-            <div class="title">Mahomes-lander</div>
-            <div class="winner">Niall Murray</div>
-            <div class="icon">🏆</div>
-          </div>
-          <div class="banner">
-            <div class="year">2023</div>
-            <div class="title">Burns XI</div>
-            <div class="winner">Emmet Burns</div>
-            <div class="icon">🏆</div>
-          </div>
-          <!-- Repeat banners dynamically -->
-        </div>
-      </section>
-      
+    </header>
 
-<!-- Team Performance Component -->
-<section id="team-performance">
-<h2>Team Performance</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Team</th>
-            <th>Win Ratio</th>
-            <th>Points Per Game</th>
-            <th>Avg Regular Rank</th>
-            <th>Playoff Wins</th>
-            <th>Rings</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Burkeys Teur</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>BurrowMeDickinYoAss</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Burns XI</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Cooper Kupp Mah Balls XI</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Hawk Tuas Binatsos</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Mahomes-lander and the boys</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Prime Time</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Pronouns Who Dey</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Sauce Pjardner</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Tampa B'Ah/td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>The Finest Wagyu</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Who's throwing Diggs</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <!-- Add more rows here -->
-    </tbody>
-</table>
-</section>
+    <section class="page-title">
+        <h1>MAC12 Fantasy NFL</h1>
+        <p>Ohhhhhh yeeeeeee, get up and smell that football!</p>
+    </section>
 
-<!-- Placeholder for Team Breakdown -->
-<section id="team-breakdown">
-<h2>Team Breakdown</h2>
-<p>Team-specific data will go here...</p>
-<!-- Will include collapsible panels in the next step -->
-</section>
+    <section class="champion-showcase">
+        <div class="champion-card">
+            <div class="champion-banner">Reigning Champ</div>
+            <div class="champion-content">
+                <div class="team-logo-section">
+                    <img src="images/NiallLogo.jpeg" alt="Mahomes-lander Team Logo" class="team-logo">
+                </div>
+                <div class="champion-info">
+                    <div class="franchise-name">Mahomes-lander</div>
+                    <div class="manager-name">GM: Niall Murray</div>
+                </div>
+                <div class="stats-section">
+                    <div class="stat-item">
+                        <div class="stat-label">Season Record</div>
+                        <div class="stat-value">11-3</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Points Per Game</div>
+                        <div class="stat-value">0.0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="performance-section">
+        <h2>Team Performance</h2>
+        <table class="performance-table">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Win Ratio</th>
+                    <th>Points Per Game</th>
+                    <th>Avg Regular Rank</th>
+                    <th>Playoff Wins</th>
+                    <th>Rings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Burkeys Teur</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>BurrowMeDickinYoAss</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>Burns XI</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>Cooper Kupp Mah Balls XI</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>Hawk Tuas Binatsos</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>Mahomes-lander and the boys</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>Prime Time</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>Pronouns Who Dey</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>Sauce Pjardner</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>Tampa B'Ah</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>The Finest Wagyu</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+                <tr>
+                    <td>Who's throwing Diggs</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                    <td class="stat-cell">1</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Placeholder for Team Breakdown -->
+    <section id="team-breakdown">
+        <h2>Team Breakdown</h2>
+        <p>Team-specific data will go here...</p>
+        <!-- Will include collapsible panels in the next step -->
+    </section>
+
     </main>
     <footer>
         <p>© 2024 MAC12 NFL Fantasy League | Built by karlmor</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

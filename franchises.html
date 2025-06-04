@@ -5,94 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franchises - MAC12 NFL Fantasy League</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-    <!-- 1) Logo Row -->
-    <div class="logo-container">
-        <a href="index.html">
-        <img src="images/MAC12 Logo.png" alt="League Logo" class="logo">
-        </a>
-    </div>
-    <!-- 2) Heading + Tagline Row -->
-    <div class="header-text">
-        <h1>MAC12 Fantasy NFL</h1>
-        <p>Ohhhhhh yeeeeeee, get up and smell that football!</p>
-    </div>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/MAC12 Logo.png" alt="League Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="franchises.html" class="active">Franchises</a>
+                    <a href="newsletters.html">Newsletters</a>
+                    <div class="nav-item">
+                        <a href="#" class="dropdown-toggle">Seasons</a>
+                        <div class="dropdown-menu">
+                            <a href="seasons/2024.html">2024 Season</a>
+                            <a href="seasons/2023.html">2023 Season</a>
+                        </div>
+                    </div>
+                    <a href="rivalries.html">Rivalries</a>
+                    <a href="draft-history.html">Draft History</a>
+                </div>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="franchises.html">Franchises</a>
-        <a href="newsletters.html">Newsletters</a>
-        <a href="awards.html">Awards & Records</a>
-        <a href="rings.html">Championship Rings</a>
-        <a href="draft-history.html">Draft History</a>
-    </nav>
+
+    <section class="page-title">
+        <h1>GM's of MAC12</h1>
+    </section>
+
     <main>
-        <h2>Franchises</h2>
-        <p>The GM's!</p>
+        <h2 class="franchises-heading">Franchises</h2>
         <div class="franchises-container">
             <div class="franchise-box">
-                <img src="images/daveLogo.png" alt="Team 1 Logo">
+                <img src="images/daveLogo.png" alt="David Sharpe Avatar">
                 <h3>Burkeys Teur</h3>
-                <p>GM: David Sharpe</p>
+                <div class="gm-name">David</div>
             </div>
             <div class="franchise-box">
-                <img src="images/AidanLogo.png" alt="Team 2 Logo">
+                <img src="images/AidanLogo.png" alt="Aidan Murphy Avatar">
                 <h3>BurrowMeDickinYoAss</h3>
-                <p>GM: Aidan Murphy</p>
+                <div class="gm-name">Aidan</div>
             </div>
             <div class="franchise-box">
-                <img src="images/EmmetLogo.png" alt="Team 3 Logo">
+                <img src="images/EmmetLogo.png" alt="Emmet Burns Avatar">
                 <h3>Burns XI</h3>
-                <p>GM: Emmet Burnsn</p>
+                <div class="gm-name">Emmet</div>
             </div>
             <div class="franchise-box">
-                <img src="images/KennanLogo.png" alt="Team 3 Logo">
+                <img src="images/KennanLogo.png" alt="Andrew Keenan Avatar">
                 <h3>Cooper Kupp Mah Balls</h3>
-                <p>GM: Andrew Keenan</p>
+                <div class="gm-name">Andrew</div>
             </div>
             <div class="franchise-box">
-                <img src="images/HugoLogo.jpg" alt="Team 3 Logo">
-                <h3>Hawk Tuas Binatsos </h3>
-                <p>GM: Hugo Walsh</p>
+                <img src="images/HugoLogo.jpg" alt="Hugo Walsh Avatar">
+                <h3>Hawk Tuas Binatsos</h3>
+                <div class="gm-name">Hugo</div>
             </div>
             <div class="franchise-box">
-                <img src="images/NiallLogo.jpeg" alt="Team 3 Logo">
-                <h3>Mahomes-lander and the boys</h3>
-                <p>GM: Niall Murray</p>
+                <img src="images/NiallLogo.jpeg" alt="Niall Murray Avatar">
+                <h3>Mahomes-lander</h3>
+                <div class="gm-name">Niall</div>
             </div>
             <div class="franchise-box">
-                <img src="images/TommyLogo.png" alt="Team 3 Logo">
+                <img src="images/TommyLogo.png" alt="Tommy O'Brien Avatar">
                 <h3>Prime Time</h3>
-                <p>GM: Tommy O'Brien</p>
+                <div class="gm-name">Tommy</div>
             </div>
             <div class="franchise-box">
-                <img src="images/PronounsLogo.png" alt="Team 3 Logo">
+                <img src="images/PronounsLogo.png" alt="Karl Moroney Avatar">
                 <h3>Pronouns Who Dey</h3>
-                <p>GM: Karl Moroney</p>
+                <div class="gm-name">Karl</div>
             </div>
             <div class="franchise-box">
-                <img src="images/JoeLogo.jpg" alt="Team 3 Logo">
+                <img src="images/JoeLogo.jpg" alt="Joe Ennis Avatar">
                 <h3>Sauce Pjardner</h3>
-                <p>GM: Joe Ennis</p>
+                <div class="gm-name">Joe</div>
             </div>
             <div class="franchise-box">
-                <img src="images/AlanLogo.jpg" alt="Team 3 Logo">
+                <img src="images/AlanLogo.jpg" alt="Alan Horgan Avatar">
                 <h3>Tampa B'Ah</h3>
-                <p>GM: Alan Horgan</p>
+                <div class="gm-name">Alan</div>
             </div>
             <div class="franchise-box">
-                <img src="images/JackLogo.png" alt="Team 3 Logo">
+                <img src="images/JackLogo.png" alt="Jack Ringrose Avatar">
                 <h3>The Finest Wagyu</h3>
-                <p>GM: Jack Ringrose</p>
+                <div class="gm-name">Jack</div>
             </div>
             <div class="franchise-box">
-                <img src="images/ShaneLogo.png" alt="Team 3 Logo">
+                <img src="images/ShaneLogo.png" alt="Shane Marmion Avatar">
                 <h3>Who's throwing Diggs</h3>
-                <p>GM: Shane Marmion</p>
+                <div class="gm-name">Shane</div>
             </div>
-            <!-- Add more franchises here -->
         </div>
     </main>
     <footer>

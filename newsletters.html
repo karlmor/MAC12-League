@@ -5,40 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletters - MAC12 NFL Fantasy League</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-    <!-- 1) Logo Row -->
-    <div class="logo-container">
-        <a href="index.html">
-        <img src="images/MAC12 Logo.png" alt="League Logo" class="logo">
-        </a>
-    </div>
-    
-    <!-- 2) Heading + Tagline Row -->
-    <div class="header-text">
-        <h1>MAC12 Fantasy NFL</h1>
-        <p>Ohhhhhh yeeeeeee, get up and smell that football!</p>
-    </div>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/MAC12 Logo.png" alt="League Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="franchises.html">Franchises</a>
+                    <a href="newsletters.html" class="active">Newsletters</a>
+                    <div class="nav-item">
+                        <a href="#" class="dropdown-toggle">Seasons</a>
+                        <div class="dropdown-menu">
+                            <a href="seasons/2024.html">2024 Season</a>
+                            <a href="seasons/2023.html">2023 Season</a>
+                        </div>
+                    </div>
+                    <a href="rivalries.html">Rivalries</a>
+                    <a href="draft-history.html">Draft History</a>
+                </div>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="franchises.html">Franchises</a>
-        <a href="newsletters.html">Newsletters</a>
-        <a href="awards.html">Awards & Records</a>
-        <a href="rings.html">Championship Rings</a>
-        <a href="draft-history.html">Draft History</a>
-    </nav>
-    <main>
-        <h2>Newsletters</h2>
-        <p>Whats been happening around the league credit to our full time employee Alan Morgan!</p>
-        <ul>
-            <li><a href="newsletter1.html">Newsletter 1: Week 1 Recap</a></li>
-            <li><a href="newsletter2.html">Newsletter 2: Power Rankings</a></li>
-        </ul>
+
+    <section class="page-title">
+        <h1>League Newsletters</h1>
+        <p>What's been happening around the league? Credit to our full time employee Alan Morgan</p>
+    </section>
+
+    <main class="newsletter-archive">
+        <section class="season-newsletters">
+            <div class="season-toggle">
+                <button class="season-button active" data-season="2025">
+                    <span class="season-year">2025 Season</span>
+                    <span class="toggle-icon"></span>
+                </button>
+                <div class="newsletter-grid active" id="season-2025">
+                    <!-- Placeholder for 2025 newsletters -->
+                    <a href="#" class="newsletter-card">
+                        <div class="newsletter-content">
+                            <span class="week-label">Coming Soon</span>
+                            <h3>2025 Season Preview</h3>
+                            <p class="newsletter-date">September 2025</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="season-newsletters">
+            <div class="season-toggle">
+                <button class="season-button" data-season="2024">
+                    <span class="season-year">2024 Season</span>
+                    <span class="toggle-icon"></span>
+                </button>
+                <div class="newsletter-grid" id="season-2024">
+                    <!-- Placeholder for 2024 newsletters -->
+                    <a href="#" class="newsletter-card">
+                        <div class="newsletter-content">
+                            <span class="week-label">Week 1</span>
+                            <h3>Season Kickoff Special</h3>
+                            <p class="newsletter-date">September 2024</p>
+                        </div>
+                    </a>
+                    <!-- Add more newsletter cards as they come -->
+                </div>
+            </div>
+        </section>
+
+        <section class="season-newsletters">
+            <div class="season-toggle">
+                <button class="season-button" data-season="2023">
+                    <span class="season-year">2023 Season</span>
+                    <span class="toggle-icon"></span>
+                </button>
+                <div class="newsletter-grid" id="season-2023">
+                    <a href="#" class="newsletter-card">
+                        <div class="newsletter-content">
+                            <span class="week-label">Week 15</span>
+                            <h3>Championship Special</h3>
+                            <p class="newsletter-date">December 2023</p>
+                        </div>
+                    </a>
+                    <a href="#" class="newsletter-card">
+                        <div class="newsletter-content">
+                            <span class="week-label">Week 14</span>
+                            <h3>Playoff Push</h3>
+                            <p class="newsletter-date">December 2023</p>
+                        </div>
+                    </a>
+                    <!-- Add more newsletter cards -->
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>© 2024 MAC12 NFL Fantasy League | Built by karlmor</p>
     </footer>
+
+    <script>
+        // Toggle season sections
+        document.querySelectorAll('.season-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const seasonId = button.getAttribute('data-season');
+                const content = document.getElementById(`season-${seasonId}`);
+                
+                // Toggle active class on button
+                button.classList.toggle('active');
+                
+                // Toggle content visibility
+                content.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

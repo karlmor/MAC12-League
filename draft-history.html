@@ -5,68 +5,861 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draft History - MAC12 NFL Fantasy League</title>
     <link rel="stylesheet" href="css/styles.css">
-<</head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
     <header>
-    <!-- 1) Logo Row -->
-    <div class="logo-container">
-        <a href="index.html">
-        <img src="images/MAC12 Logo.png" alt="League Logo" class="logo">
-        </a>
-    </div>
-    
-    <!-- 2) Heading + Tagline Row -->
-    <div class="header-text">
-        <h1>MAC12 Fantasy NFL</h1>
-        <p>Ohhhhhh yeeeeeee, get up and smell that football!</p>
-    </div>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="franchises.html">Franchises</a>
-        <a href="newsletters.html">Newsletters</a>
-        <a href="awards.html">Awards & Records</a>
-        <a href="rings.html">Championship Rings</a>
-        <a href="draft-history.html">Draft History</a> <!-- New Link -->
-    </nav>
-    <main>
-        <h2>Draft History</h2>
-        <p>History of past drafts in the MAC12.</p>
-    </main>
-    <section class="draft-banner">
-        <div>
-            <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 994.17 1448.13" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                    <path fill="#e4e4e4" d="M994.17 38.88v1370.37c0 21.473-17.407 38.88-38.88 38.88H38.88c-21.473 0-38.88-17.407-38.88-38.88V38.88C0 17.407 17.407 0 38.88 0h916.41c21.473 0 38.88 17.407 38.88 38.88"></path>
-                    <path d="M839.55 66.88c4.54-2.85 2.85-9.69-2.56-10.27a3368 3368 0 0 0-389.56-18.78 3400 3400 0 0 0-312.55 18.78c-5.41.59-7.1 7.42-2.56 10.27 17.47 11.03 34.84 22.2 52.12 33.52a3641 3641 0 0 0-43.69 43.31c-3.71 3.76-.63 10.06 4.62 9.49a3299 3299 0 0 1 303.21-18.22c126.28-1.22 252.34 4.85 377.92 18.22 5.25.57 8.33-5.73 4.62-9.49-14.44-14.56-29-29-43.69-43.31 17.28-11.33 34.65-22.5 52.12-33.52" fill="#2d2d2d"></path>
-                    <path d="M215.11 79.98c44.69-3.68 89.42-6.52 134.21-8.51" fill="none" stroke="#0056b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></path>
-                    <path d="M622.56 71.47c44.8 1.99 89.52 4.83 134.21 8.51" fill="none" stroke="#0056b3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></path>
-                </g>
-            </svg>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/MAC12 Logo.png" alt="League Logo" class="logo">
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="franchises.html">Franchises</a>
+                    <a href="newsletters.html">Newsletters</a>
+                    <div class="nav-item">
+                        <a href="#" class="dropdown-toggle">Seasons</a>
+                        <div class="dropdown-menu">
+                            <a href="seasons/2024.html">2024 Season</a>
+                            <a href="seasons/2023.html">2023 Season</a>
+                        </div>
+                    </div>
+                    <a href="rivalries.html">Rivalries</a>
+                    <a href="draft-history.html" class="active">Draft History</a>
+                </div>
+            </nav>
         </div>
-    </section>    
-    <section class="draft-history">
-        <div class="draft-grid">
-            <div class="draft-card">
-                <div class="year-banner">2024</div>
-                <img src="images/placeholder.png" alt="Player Illustration">
-                <div class="draft-details">
-                    <h3>Christian McCaffrey</h3>
-                    <p>Manager: Emmet</p>
+    </header>
+
+    <section class="page-title">
+        <h1>Draft History</h1>
+        <p>First Round Picks... Who knows ball?</p>
+    </section>
+
+    <main class="draft-history-container">
+        <section class="draft-year">
+            <div class="year-header">
+                <h2>2024 Draft</h2>
+                <div class="draft-info">First Round Selections</div>
+            </div>
+
+            <div class="draft-picks-grid">
+                <!-- 2024 Draft Picks -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#1</div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/PlayerShots/CMC.png" alt="Christian McCaffrey">
+                        </div>
+                        <div class="pick-details">
+                            <h3>Christian McCaffrey</h3>
+                            <div class="position-rank">
+                                <span>RB1</span>
+                            </div>
+                            <div class="team-info">
+                                <img src="images/EmmetLogo.png" alt="Burns XI Logo" class="gm-avatar">
+                                <span>Burns XI</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">24.5</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">17</span>
+                            </div>
+                        </div>
+                        <div class="impact-stamp boom">
+                            <span>BOOM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#2</div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Ja'Marr Chase">
+                        </div>
+                        <div class="pick-details">
+                            <h3>Ja'Marr Chase</h3>
+                            <div class="position-rank">
+                                <span>WR5</span>
+                            </div>
+                            <div class="team-info">
+                                <img src="images/TommyLogo.png" alt="Prime Time Logo" class="gm-avatar">
+                                <span>Prime Time</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">17.2</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">16</span>
+                            </div>
+                        </div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- #3 Andrew -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#3</div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Bijan Robinson">
+                        </div>
+                        <div class="pick-details">
+                            <h3>Bijan Robinson</h3>
+                            <div class="position-rank">
+                                <span>RB8</span>
+                            </div>
+                            <div class="team-info">
+                                <img src="images/KennanLogo.png" alt="Cooper Kupp Mah Balls Logo" class="gm-avatar">
+                                <span>Cooper Kupp Mah Balls</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">15.8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">17</span>
+                            </div>
+                        </div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with remaining 2024 picks -->
+                <!-- David #4 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#4</div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Travis Kelce">
+                        </div>
+                        <div class="pick-details">
+                            <h3>Travis Kelce</h3>
+                            <div class="position-rank">
+                                <span>TE3</span>
+                            </div>
+                            <div class="team-info">
+                                <img src="images/DavidLogo.png" alt="Kelce's Belly Logo" class="gm-avatar">
+                                <span>Kelce's Belly</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">14.2</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">15</span>
+                            </div>
+                        </div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Joe #5 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#5</div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Tyreek Hill">
+                        </div>
+                        <div class="pick-details">
+                            <h3>Tyreek Hill</h3>
+                            <div class="position-rank">
+                                <span>WR1</span>
+                            </div>
+                            <div class="team-info">
+                                <img src="images/JoeLogo.png" alt="Waddle Waddle Logo" class="gm-avatar">
+                                <span>Waddle Waddle</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">22.1</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">16</span>
+                            </div>
+                        </div>
+                        <div class="impact-stamp boom">
+                            <span>BOOM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aidan #6 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#6</div>
+                        <div class="player-name">Saquon Barkley</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Saquon Barkley">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/AidanLogo.png" alt="Saquon Deez Nuts Logo" class="gm-avatar">
+                                <span>Saquon Deez Nuts</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">16.4</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">14</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>RB12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karl #7 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#7</div>
+                        <div class="player-name">Josh Allen</div>
+                        <div class="impact-stamp boom">
+                            <span>BOOM</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Josh Allen">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/KarlLogo.png" alt="Allen Town Logo" class="gm-avatar">
+                                <span>Allen Town</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">23.8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">16</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>QB2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shane #8 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#8</div>
+                        <div class="player-name">Stefon Diggs</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Stefon Diggs">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/ShaneLogo.png" alt="Who's throwing Diggs Logo" class="gm-avatar">
+                                <span>Who's throwing Diggs</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">15.7</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">17</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>WR8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jack #9 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#9</div>
+                        <div class="player-name">Tony Pollard</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Tony Pollard">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/JackLogo.png" alt="The Finest Wagyu Logo" class="gm-avatar">
+                                <span>The Finest Wagyu</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">13.9</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">17</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>RB15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Niall #10 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#10</div>
+                        <div class="player-name">Patrick Mahomes</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Patrick Mahomes">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/NiallLogo.jpeg" alt="Mahomes-lander Logo" class="gm-avatar">
+                                <span>Mahomes-lander</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">20.4</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">16</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>QB4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hugo #11 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#11</div>
+                        <div class="player-name">Amon-Ra St. Brown</div>
+                        <div class="impact-stamp boom">
+                            <span>BOOM</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Amon-Ra St. Brown">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/HugoLogo.png" alt="Sun God Logo" class="gm-avatar">
+                                <span>Sun God</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">19.8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">16</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>WR3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alan #12 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#12</div>
+                        <div class="player-name">Travis Etienne</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Travis Etienne">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/AlanLogo.png" alt="Etienne Dion Logo" class="gm-avatar">
+                                <span>Etienne Dion</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">14.6</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">17</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>RB14</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="draft-card">
-                <div class="year-banner">2023</div>
-                <img src="images/placeholder.png" alt="Player Illustration">
-                <div class="draft-details">
-                    <h3>???</h3>
-                    <p>Manager: ???</p>
+        </section>
+
+        <section class="draft-year">
+            <div class="year-header">
+                <h2>2023 Draft</h2>
+                <div class="draft-info">First Round Selections</div>
+            </div>
+
+            <div class="draft-picks-grid">
+                <!-- 2023 Draft Picks -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#1</div>
+                        <div class="player-name">Austin Ekeler</div>
+                        <div class="impact-stamp bust">
+                            <span>BUST</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Austin Ekeler">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/ShaneLogo.png" alt="Who's throwing Diggs Logo" class="gm-avatar">
+                                <span>Who's throwing Diggs</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">12.4</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">14</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>RB28</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aidan #2 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#2</div>
+                        <div class="player-name">Justin Jefferson</div>
+                        <div class="impact-stamp bust">
+                            <span>BUST</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Justin Jefferson">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/AidanLogo.png" alt="Saquon Deez Nuts Logo" class="gm-avatar">
+                                <span>Saquon Deez Nuts</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">16.8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">10</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>WR14</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emmet #3 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#3</div>
+                        <div class="player-name">Bijan Robinson</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Bijan Robinson">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/EmmetLogo.png" alt="Burns XI Logo" class="gm-avatar">
+                                <span>Burns XI</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">15.8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">17</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>RB8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Joe #4 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#4</div>
+                        <div class="player-name">Travis Kelce</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Travis Kelce">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/JoeLogo.png" alt="Waddle Waddle Logo" class="gm-avatar">
+                                <span>Waddle Waddle</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">14.2</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">15</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>TE3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jack #5 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#5</div>
+                        <div class="player-name">Ja'Marr Chase</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Ja'Marr Chase">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/JackLogo.png" alt="The Finest Wagyu Logo" class="gm-avatar">
+                                <span>The Finest Wagyu</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">17.2</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">16</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>WR5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Andrew #6 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#6</div>
+                        <div class="player-name">Saquon Barkley</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Saquon Barkley">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/KennanLogo.png" alt="Cooper Kupp Mah Balls Logo" class="gm-avatar">
+                                <span>Cooper Kupp Mah Balls</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">16.4</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">14</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>RB12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tommy #7 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#7</div>
+                        <div class="player-name">Josh Allen</div>
+                        <div class="impact-stamp boom">
+                            <span>BOOM</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Josh Allen">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/TommyLogo.png" alt="Prime Time Logo" class="gm-avatar">
+                                <span>Prime Time</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">23.8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">16</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>QB2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alan #8 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#8</div>
+                        <div class="player-name">Tony Pollard</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Tony Pollard">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/AlanLogo.png" alt="Etienne Dion Logo" class="gm-avatar">
+                                <span>Etienne Dion</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">13.9</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">17</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>RB15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Niall #9 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#9</div>
+                        <div class="player-name">Patrick Mahomes</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Patrick Mahomes">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/NiallLogo.jpeg" alt="Mahomes-lander Logo" class="gm-avatar">
+                                <span>Mahomes-lander</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">20.4</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">16</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>QB4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- David #10 -->
+                <div class="draft-pick-card">
+                    <div class="pick-header">
+                        <div class="pick-number">#10</div>
+                        <div class="player-name">Stefon Diggs</div>
+                        <div class="impact-stamp mid">
+                            <span>MID</span>
+                        </div>
+                    </div>
+                    <div class="pick-content">
+                        <div class="player-image">
+                            <img src="images/draft/placeholder.png" alt="Stefon Diggs">
+                        </div>
+                        <div class="pick-details">
+                            <div class="team-info">
+                                <img src="images/DavidLogo.png" alt="Kelce's Belly Logo" class="gm-avatar">
+                                <span>Kelce's Belly</span>
+                            </div>
+                        </div>
+                        <div class="pick-stats">
+                            <div class="stat">
+                                <span class="label">AVG POINTS</span>
+                                <span class="value">15.7</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">GAMES</span>
+                                <span class="value">17</span>
+                            </div>
+                        </div>
+                        <div class="position-rank">
+                            <span>WR8</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Add more cards as needed -->
+        </section>
+    </main>
+
+    <section class="draft-facts">
+        <h2>Draft Fun Facts</h2>
+        <div class="facts-grid">
+            <div class="fact-card">
+                <div class="fact-icon">🏆</div>
+                <h3>Best Pick</h3>
+                <p>Christian McCaffrey (2024) - Averaged 24.5 points per game and played all 17 games.</p>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">💔</div>
+                <h3>Biggest Bust</h3>
+                <p>Austin Ekeler (2023) - The first overall pick struggled with injuries and underperformed.</p>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🎯</div>
+                <h3>Draft Strategy</h3>
+                <p>RBs dominated the first round in both years, with 8 of 12 picks being running backs.</p>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">📈</div>
+                <h3>Value Pick</h3>
+                <p>Coming soon...</p>
+            </div>
         </div>
     </section>
-    
+
     <footer>
         <p>© 2024 MAC12 NFL Fantasy League | Built by karlmor</p>
     </footer>
