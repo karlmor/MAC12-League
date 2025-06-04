@@ -24,9 +24,8 @@
                 <div class="nav-links">
                     <a href="../index.html">Home</a>
                     <a href="../franchises.html">Franchises</a>
-                    <a href="../newsletters.html">Newsletters</a>
                     <div class="nav-item">
-                        <a href="#" class="dropdown-toggle active">Seasons</a>
+                        <a href="#" class="dropdown-toggle">Seasons</a>
                         <div class="dropdown-menu">
                             <a href="2024.html">2024 Season</a>
                             <a href="2023.html" class="active">2023 Season</a>
@@ -34,6 +33,7 @@
                     </div>
                     <a href="../rivalries.html">Rivalries</a>
                     <a href="../draft-history.html">Draft History</a>
+                    <a href="../newsletters.html">Newsletters</a>
                 </div>
             </nav>
         </div>
@@ -41,63 +41,192 @@
 
     <section class="page-title">
         <h1>2023 Season</h1>
-        <p>A look back at the inaugural season</p>
     </section>
 
-    <section class="champion-showcase">
-        <div class="champion-card">
-            <div class="champion-banner">2023 Champion</div>
-            <div class="champion-content">
-                <div class="team-logo-section">
-                    <img src="../images/NiallLogo.jpeg" alt="Mahomes-lander Team Logo" class="team-logo">
+    <!-- League Champion Section -->
+    <section class="season-champion-section">
+        <div class="season-champion-wrapper">
+            <div class="season-champion-banner">
+                <h2>MAC12 Champion</h2>
+                <div class="season-banner-accent"></div>
+            </div>
+            
+            <div class="season-champion-showcase">
+                <div class="season-champion-photo">
+                    <img src="../images/TrophyPics/EmmetTrophy.PNG" alt="2023 Champion with Trophy" class="season-trophy-photo">
                 </div>
-                <div class="champion-info">
-                    <div class="franchise-name">Mahomes-lander</div>
-                    <div class="manager-name">GM: Niall Murray</div>
-                </div>
-                <div class="stats-section">
-                    <div class="stat-item">
-                        <div class="stat-label">Season Record</div>
-                        <div class="stat-value">11-3</div>
+                
+                <div class="season-champion-details">
+                    <div class="season-champion-team">
+                        <img src="../images/EmmetLogo.jpg" alt="Burns XI Logo" class="season-team-logo">
+                        <h3>Burns XI</h3>
+                        <p class="season-gm-name">Emmet Burns</p>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-label">Points Per Game</div>
-                        <div class="stat-value">0.0</div>
+                    
+                    <div class="season-champion-stats">
+                        <div class="season-stat-item">
+                            <span class="season-stat-label">Final Record</span>
+                            <span class="season-stat-value">0-0</span>
+                        </div>
+                        <div class="season-stat-item">
+                            <span class="season-stat-label">Points Scored</span>
+                            <span class="season-stat-value">0.00</span>
+                        </div>
+                        <div class="season-stat-item">
+                            <span class="season-stat-label">Championship Score</span>
+                            <span class="season-stat-value">0.00</span>
+                        </div>
+                    </div>
+
+                    <div class="path-to-glory">
+                        <h4>Path to Glory</h4>
+                        <div class="playoff-path">
+                            <div class="path-round">
+                                <span class="round-label">Quarter Final</span>
+                                <span class="round-score">Won 0.00 - 0.00</span>
+                                <span class="round-opponent">vs TBD</span>
+                            </div>
+                            <div class="path-round">
+                                <span class="round-label">Semi Final</span>
+                                <span class="round-score">Won 0.00 - 0.00</span>
+                                <span class="round-opponent">vs TBD</span>
+                            </div>
+                            <div class="path-round championship">
+                                <span class="round-label">Championship</span>
+                                <span class="round-score">Won 0.00 - 0.00</span>
+                                <span class="round-opponent">vs TBD</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="season-highlights">
-        <h2>Season Highlights</h2>
-        <div class="highlights-grid">
-            <div class="highlight-card">
-                <h3>Regular Season Winner</h3>
-                <p>Team Name: [Winner]</p>
-                <p>Record: [Record]</p>
+    <!-- Regular Season Standings -->
+    <section class="standings-section">
+        <h2>Season Standings</h2>
+        <div class="standings-container">
+            <div class="standings-table-wrapper">
+                <h3>Regular Season</h3>
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>Record</th>
+                            <th>Pct</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Add 2023 standings data here -->
+                        <tr>
+                            <td>1</td>
+                            <td class="team-cell">
+                                <img src="../images/EmmetLogo.jpg" alt="Burns XI Logo">
+                                Burns XI
+                            </td>
+                            <td>0-0-0</td>
+                            <td>.000</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                        </tr>
+                        <!-- Add more team rows -->
+                    </tbody>
+                </table>
             </div>
-            <div class="highlight-card">
-                <h3>Highest Single Week Score</h3>
-                <p>Team: [Team Name]</p>
-                <p>Score: [Score]</p>
-                <p>Week: [Week Number]</p>
-            </div>
-            <div class="highlight-card">
-                <h3>Most Points Scored</h3>
-                <p>Team: [Team Name]</p>
-                <p>Total Points: [Points]</p>
+            
+            <div class="standings-table-wrapper">
+                <h3>Post Season Rankings</h3>
+                <table class="post-season-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="team-cell">
+                                <span class="trophy-icon trophy-gold">🏆</span>
+                                <img src="../images/EmmetLogo.jpg" alt="Burns XI Logo">
+                                Burns XI
+                            </td>
+                        </tr>
+                        <!-- Add more team rows -->
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
 
-    <section class="playoff-bracket">
-        <h2>Playoff Results</h2>
-        <!-- Add playoff bracket visualization here -->
+    <!-- Playoff Bracket -->
+    <section class="playoff-section">
+        <h2>Playoff Bracket</h2>
+        <div class="playoff-bracket">
+            <div class="bracket-container">
+                <!-- Quarterfinals -->
+                <div class="bracket-round">
+                    <div class="bracket-round-title">Quarterfinal</div>
+                    <div class="bracket-week">Week 15</div>
+                    
+                    <!-- Game 1 -->
+                    <div class="bracket-game">
+                        <div class="bracket-team">
+                            <div class="bracket-team-seed">(1)</div>
+                            <img src="../images/EmmetLogo.jpg" alt="Burns XI">
+                            <div class="bracket-team-info">
+                                <span class="bracket-team-name">Burns XI</span>
+                            </div>
+                        </div>
+                        <div class="bracket-bye">BYE</div>
+                        <div class="bracket-connector top right"></div>
+                    </div>
+
+                    <!-- Add more games -->
+                </div>
+
+                <!-- Add semifinals and championship -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Position Kings -->
+    <section class="medalists-section">
+        <h2>Top Dawgs</h2>
+        <div class="medalists-grid">
+            <div class="medalist-card qb">
+                <div class="position-banner">QUARTERBACK</div>
+                <div class="player-content">
+                    <img src="../images/ActionShots/placeholder.jpg" alt="QB" class="player-photo">
+                    <div class="player-details">
+                        <h3>Player Name</h3>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="label">Points</span>
+                                <span class="value">0.0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">PPG</span>
+                                <span class="value">0.0</span>
+                            </div>
+                        </div>
+                        <div class="manager-info">
+                            <img src="../images/EmmetLogo.jpg" alt="Manager Logo" class="manager-photo">
+                            <span class="manager-name">Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add RB, WR, TE cards -->
+        </div>
     </section>
 
     <footer>
-        <p>© 2024 MAC12 NFL Fantasy League | Built by karlmor</p>
+        <p>© 2025 MAC12 NFL Fantasy League | Built by karlmor</p>
     </footer>
     <script src="../js/main.js"></script>
 </body>
